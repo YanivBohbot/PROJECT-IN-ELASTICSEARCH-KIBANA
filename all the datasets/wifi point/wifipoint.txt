@@ -1,0 +1,969 @@
+PUT wifi_point/Wifi_Israel/wifi_tel_aviv
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 5,
+        "coordx": 666854.07,
+        "coordy": 3551236.62,
+        "lat": 32.08510423,
+        "lon": 34.76799818,
+        "latitude": "32Â° 05' 06.37''",
+        "longitude": "34Â° 46' 04.79''",
+        "shematar": "×”×ž×¨×™× ×”",
+        "siteid": 8,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.76806940185985,
+          32.08517252059206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 7,
+        "coordx": 666524.93,
+        "coordy": 3549884.91,
+        "lat": 32.07296392,
+        "lon": 34.7642778,
+        "latitude": "32Â° 04' 22.67''",
+        "longitude": "34Â° 45' 51.40''",
+        "shematar": "×—×•×£ ×™×¨×•×©×œ×™×",
+        "siteid": 10,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.764349009736655,
+          32.07303218166969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 8,
+        "coordx": 666453.42,
+        "coordy": 3549602.65,
+        "lat": 32.07042921,
+        "lon": 34.76347161,
+        "latitude": "32Â° 04' 13.54''",
+        "longitude": "34Â° 45' 48.49''",
+        "shematar": "×‘× × ×” ×‘×™×¥'",
+        "siteid": 11,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.76354282407969,
+          32.07049746053128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 22,
+        "coordx": 667696.03,
+        "coordy": 3551014.34,
+        "lat": 32.08297506,
+        "lon": 34.77687719,
+        "latitude": "32Â° 04' 58.71''",
+        "longitude": "34Â° 46' 36.75''",
+        "shematar": "×‘×Ÿ ×’×•×¨×™×•×Ÿ ×”× ×“×¡×” ×ž×¢×¨×‘",
+        "siteid": 31,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.776948432763376,
+          32.0830433464292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 23,
+        "coordx": 668100.42,
+        "coordy": 3550738.05,
+        "lat": 32.08042351,
+        "lon": 34.78111193,
+        "latitude": "32Â° 04' 49.52''",
+        "longitude": "34Â° 46' 52.00''",
+        "shematar": "×›×™×›×¨ ×¨×‘×™×Ÿ",
+        "siteid": 32,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.78118319079331,
+          32.08049178724768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 24,
+        "coordx": 668559.72,
+        "coordy": 3550700.15,
+        "lat": 32.08001325,
+        "lon": 34.78596978,
+        "latitude": "32Â° 04' 48.04''",
+        "longitude": "34Â° 47' 09.49''",
+        "shematar": "×“×•×“ ×”×ž×œ×š",
+        "siteid": 33,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.78604105557015,
+          32.080081540380995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 26,
+        "coordx": 667997.29,
+        "coordy": 3550427.77,
+        "lat": 32.07764096,
+        "lon": 34.77996543,
+        "latitude": "32Â° 04' 39.50''",
+        "longitude": "34Â° 46' 47.87''",
+        "shematar": "×©×“ ×—×Ÿ ×¦×¤×•×Ÿ",
+        "siteid": 34,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.780036691793015,
+          32.077709232046075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 27,
+        "coordx": 668000.6,
+        "coordy": 3550207.64,
+        "lat": 32.07565548,
+        "lon": 34.77996201,
+        "latitude": "32Â° 04' 32.35''",
+        "longitude": "34Â° 46' 47.86''",
+        "shematar": "×©×“ ×—×Ÿ ×“×¨×•×",
+        "siteid": 35,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.78003327333681,
+          32.0757237503012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 28,
+        "coordx": 668002.68,
+        "coordy": 3549797.05,
+        "lat": 32.07195274,
+        "lon": 34.77991228,
+        "latitude": "32Â° 04' 19.02''",
+        "longitude": "34Â° 46' 47.68''",
+        "shematar": "×›×™×›×¨ ×”×‘×™×ž×”",
+        "siteid": 36,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.779983542395904,
+          32.07202100505253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 29,
+        "coordx": 667907.88,
+        "coordy": 3549638.7,
+        "lat": 32.07053895,
+        "lon": 34.77888068,
+        "latitude": "32Â° 04' 13.94''",
+        "longitude": "34Â° 46' 43.97''",
+        "shematar": "×¨×•×˜×©×™×œ×“ ×¤×™× ×ª ×—×©×ž×•× ××™×",
+        "siteid": 37,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77895194566687,
+          32.070607207952065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 38,
+        "coordx": 667108.67,
+        "coordy": 3549537.66,
+        "lat": 32.06974639,
+        "lon": 34.77039946,
+        "latitude": "32Â° 04' 11.08''",
+        "longitude": "34Â° 46' 13.43''",
+        "shematar": "××œ× ×‘×™ ×©×•×§ ×”×›×¨×ž×œ",
+        "siteid": 53361,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77047069193454,
+          32.06981464509278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 44,
+        "coordx": 668408.46,
+        "coordy": 3550413.94,
+        "lat": 32.07745499,
+        "lon": 34.78431763,
+        "latitude": "32Â° 04' 38.83''",
+        "longitude": "34Â° 47' 03.54''",
+        "shematar": "×’×Ÿ ×“×•×‘× ×•×‘",
+        "siteid": 64,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.78438889670301,
+          32.07752326003976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 48,
+        "coordx": 667335.65,
+        "coordy": 3549544.42,
+        "lat": 32.06977373,
+        "lon": 34.77280434,
+        "latitude": "32Â° 04' 11.18''",
+        "longitude": "34Â° 46' 22.09''",
+        "shematar": "×’×™× ×ª ×©× ×§×™×Ÿ",
+        "siteid": 5331,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77287558716588,
+          32.06984198596372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 49,
+        "coordx": 667003.42,
+        "coordy": 3549790.26,
+        "lat": 32.07203976,
+        "lon": 34.76932874,
+        "latitude": "32Â° 04' 19.34''",
+        "longitude": "34Â° 46' 09.58''",
+        "shematar": "××œ× ×‘×™ ×¤×™× ×ª ×™×•× ×” ×”× ×‘×™×",
+        "siteid": 5335,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.76939996957863,
+          32.07210801266149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 50,
+        "coordx": 667102.91,
+        "coordy": 3549559.16,
+        "lat": 32.06994112,
+        "lon": 34.77034219,
+        "latitude": "32Â° 04' 11.78''",
+        "longitude": "34Â° 46' 13.23''",
+        "shematar": "××œ× ×‘×™ 60",
+        "siteid": 5336,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77041343013592,
+          32.070009370895015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 53,
+        "coordx": 668166.66,
+        "coordy": 3549971.59,
+        "lat": 32.07350222,
+        "lon": 34.78167939,
+        "latitude": "32Â° 04' 24.60''",
+        "longitude": "34Â° 46' 54.04''",
+        "shematar": "××‘×Ÿ ×’×‘×™×¨×•×œ ×“×™×–× ×’×•×£",
+        "siteid": 331,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.781750652302186,
+          32.07357048002367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 54,
+        "coordx": 668148.09,
+        "coordy": 3551308.81,
+        "lat": 32.08556313,
+        "lon": 34.78171669,
+        "latitude": "32Â° 05' 08.02''",
+        "longitude": "34Â° 46' 54.18''",
+        "shematar": "××‘×Ÿ ×’×‘×™×¨×•×œ ××¨×œ×•×–×¨×•×‘",
+        "siteid": 334,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.78178794606987,
+          32.08563142364247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 55,
+        "coordx": 667731.8,
+        "coordy": 3549901.66,
+        "lat": 32.07293632,
+        "lon": 34.77706187,
+        "latitude": "32Â° 04' 22.57''",
+        "longitude": "34Â° 46' 37.42''",
+        "shematar": "×©×“ ×‘×Ÿ ×¦×™×•×Ÿ ×ž×œ×¦'×˜",
+        "siteid": 361,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77713311551724,
+          32.07300458343929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 57,
+        "coordx": 667435.54,
+        "coordy": 3550472.3,
+        "lat": 32.07812596,
+        "lon": 34.77402378,
+        "latitude": "32Â° 04' 41.25''",
+        "longitude": "34Â° 46' 26.48''",
+        "shematar": "×›×™×›×¨ ×“×™×–× ×’×•×£",
+        "siteid": 531,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77409502110273,
+          32.07819423554002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 59,
+        "coordx": 667404.53,
+        "coordy": 3550641.46,
+        "lat": 32.07965594,
+        "lon": 34.77372482,
+        "latitude": "32Â° 04' 46.76''",
+        "longitude": "34Â° 46' 25.40''",
+        "shematar": "×“×™×–× ×’×•×£ ×‘×™×ª ×œ×¡×™×Ÿ",
+        "siteid": 534,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.773796060434364,
+          32.07972421393235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 60,
+        "coordx": 667497.96,
+        "coordy": 3551376.17,
+        "lat": 32.08626722,
+        "lon": 34.77484242,
+        "latitude": "32Â° 05' 10.56''",
+        "longitude": "34Â° 46' 29.43''",
+        "shematar": "×“×™×–× ×’×•×£ ×‘×™×ª ×”×ž×”× ×“×¡",
+        "siteid": 535,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77491365867194,
+          32.08633551159613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 76,
+        "coordx": 669638.37,
+        "coordy": 3549654.14,
+        "lat": 32.07041953,
+        "lon": 34.79720919,
+        "latitude": "32Â° 04' 13.51''",
+        "longitude": "34Â° 47' 49.95''",
+        "shematar": "×”×”×©×›×œ×” ×¦×¤×•×Ÿ",
+        "siteid": 33112,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.797280504008725,
+          32.070487794766315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 89,
+        "coordx": 668160.12,
+        "coordy": 3550197.75,
+        "lat": 32.07554255,
+        "lon": 34.78164969,
+        "latitude": "32Â° 04' 31.95''",
+        "longitude": "34Â° 46' 53.93''",
+        "shematar": "××‘×Ÿ ×’×‘×™×¨×•×œ ×©××•×œ ×”×ž×œ×š",
+        "siteid": 3321,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.78172095945844,
+          32.07561082522798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 95,
+        "coordx": 668097.04,
+        "coordy": 3550877.48,
+        "lat": 32.08168129,
+        "lon": 34.78110052,
+        "latitude": "32Â° 04' 54.05''",
+        "longitude": "34Â° 46' 51.96''",
+        "shematar": "×›×™×›×¨ ×¨×‘×™×Ÿ 2",
+        "siteid": 321,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7811717796588,
+          32.0817495735668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 96,
+        "coordx": 668097.3,
+        "coordy": 3550900.5,
+        "lat": 32.08188883,
+        "lon": 34.7811073,
+        "latitude": "32Â° 04' 54.79''",
+        "longitude": "34Â° 46' 51.98''",
+        "shematar": "×›×™×›×¨ ×¨×‘×™×Ÿ 1",
+        "siteid": 322,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.78117856574137,
+          32.08195711592258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 97,
+        "coordx": 667417.14,
+        "coordy": 3550880.56,
+        "lat": 32.08181012,
+        "lon": 34.77390003,
+        "latitude": "32Â° 04' 54.51''",
+        "longitude": "34Â° 46' 26.04''",
+        "shematar": "×’×•×¨×“×•×Ÿ",
+        "siteid": 5342,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77397126458074,
+          32.08187839819233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 98,
+        "coordx": 667458.6,
+        "coordy": 3551163.26,
+        "lat": 32.08435318,
+        "lon": 34.77438841,
+        "latitude": "32Â° 05' 03.67''",
+        "longitude": "34Â° 46' 27.79''",
+        "shematar": "×‘×Ÿ ×’×•×¨×™×•×Ÿ ×ž×¨×›×–",
+        "siteid": 5343,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77445964649524,
+          32.08442145899555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 101,
+        "coordx": 668788.84,
+        "coordy": 3550669.98,
+        "lat": 32.07970697,
+        "lon": 34.78839111,
+        "latitude": "32Â° 04' 46.94''",
+        "longitude": "34Â° 47' 18.20''",
+        "shematar": "×“×•×“ ×”×ž×œ×š ×•×™×™×¦×ž×Ÿ",
+        "siteid": 3310,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7884623860021,
+          32.07977524946252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 103,
+        "coordx": 667122.22,
+        "coordy": 3549915.51,
+        "lat": 32.07315161,
+        "lon": 34.77060863,
+        "latitude": "32Â° 04' 23.34''",
+        "longitude": "34Â° 46' 14.19''",
+        "shematar": "×›×™×›×¨ ×‘×™××œ×™×§ ×¤×™×§×•×—",
+        "siteid": 53111,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77067986443463,
+          32.07321986173325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 104,
+        "coordx": 666392.37,
+        "coordy": 3549394.23,
+        "lat": 32.0685588,
+        "lon": 34.76278902,
+        "latitude": "32Â° 04' 06.81''",
+        "longitude": "34Â° 45' 46.04''",
+        "shematar": "×—×•×£ ×”×’×•×œ×©×™×",
+        "siteid": 111,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.76286023460343,
+          32.06862704400864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 106,
+        "coordx": 666798.91,
+        "coordy": 3550951.41,
+        "lat": 32.08254054,
+        "lon": 34.76736443,
+        "latitude": "32Â° 04' 57.14''",
+        "longitude": "34Â° 46' 02.51''",
+        "shematar": "×—×•×£ ×’×•×¨×“×•×Ÿ",
+        "siteid": 81,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.76743565094118,
+          32.08260881609081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 114,
+        "coordx": 668015.05,
+        "coordy": 3550875.88,
+        "lat": 32.08167907,
+        "lon": 34.78023186,
+        "latitude": "32Â° 04' 54.04''",
+        "longitude": "34Â° 46' 48.83''",
+        "shematar": "×¨×‘×™×Ÿ ×œ×‘×Ÿ ×’×•×¨×™×•×Ÿ",
+        "siteid": 323,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.78030312258565,
+          32.081747353585946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 124,
+        "coordx": 668307.42,
+        "coordy": 3549655.63,
+        "lat": 32.07063213,
+        "lon": 34.78311477,
+        "latitude": "32Â° 04' 14.27''",
+        "longitude": "34Â° 46' 59.21''",
+        "shematar": "×”×¡×™× ×™×ž×˜×§",
+        "siteid": 3611,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.783186038693316,
+          32.07070038865411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 125,
+        "coordx": 668178.3,
+        "coordy": 3549773.13,
+        "lat": 32.0717109,
+        "lon": 34.78176794,
+        "latitude": "32Â° 04' 18.15''",
+        "longitude": "34Â° 46' 54.36''",
+        "shematar": "××‘×Ÿ ×’×‘×™×¨×•×œ ×¤×™× ×ª ×‘×¨×›×” ×¤×•×œ×“",
+        "siteid": 337,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.78183921557201,
+          32.07177917058107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 131,
+        "coordx": 667128.78,
+        "coordy": 3549557.15,
+        "lat": 32.06991916,
+        "lon": 34.77061581,
+        "latitude": "32Â° 04' 11.70''",
+        "longitude": "34Â° 46' 14.21''",
+        "shematar": "××œ× ×‘×™ ×§×™× ×’ ×’'×•×¨×’'",
+        "siteid": 53363,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.77068704645679,
+          32.069987420423324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 132,
+        "coordx": 667128.38,
+        "coordy": 3549555.55,
+        "lat": 32.06990479,
+        "lon": 34.77061129,
+        "latitude": "32Â° 04' 11.65''",
+        "longitude": "34Â° 46' 14.20''",
+        "shematar": "××œ× ×‘×™ ×©× ×§×™×Ÿ",
+        "siteid": 53364,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.770682528587315,
+          32.06997304845842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 142,
+        "coordx": 669463.02,
+        "coordy": 3551067.31,
+        "lat": 32.08318878,
+        "lon": 34.7956014,
+        "latitude": "32Â° 04' 59.47''",
+        "longitude": "34Â° 47' 44.16''",
+        "shematar": "×ž×ª×—× ×¨×›×‘×ª ×ž×¨×›×–",
+        "siteid": 63,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.79567270494364,
+          32.08325707451484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 154,
+        "coordx": 667065.87,
+        "coordy": 3549412.01,
+        "lat": 32.06861969,
+        "lon": 34.76992437,
+        "latitude": "32Â° 04' 07.03''",
+        "longitude": "34Â° 46' 11.72''",
+        "shematar": "× ×—×œ×ª ×‘× ×™×ž×™×Ÿ 10",
+        "siteid": 533213,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.76999561045938,
+          32.06868793458918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 167,
+        "coordx": 667990.46,
+        "coordy": 3550612.98,
+        "lat": 32.07931208,
+        "lon": 34.77992547,
+        "latitude": "32Â° 04' 45.52''",
+        "longitude": "34Â° 46' 47.73''",
+        "shematar": "×©×“ ×—×Ÿ ×•×¨×‘×™×Ÿ",
+        "siteid": 341,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.779996728048864,
+          32.07938035740183
+        ] 
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 168,
+        "coordx": 668109.03,
+        "coordy": 3550536.93,
+        "lat": 32.07860866,
+        "lon": 34.78116794,
+        "latitude": "32Â° 04' 42.99''",
+        "longitude": "34Â° 46' 52.20''",
+        "shematar": "××‘×Ÿ ×’×‘×™×¨×•×œ ×ž×× ×”",
+        "siteid": 332,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.78123920679754,
+          32.078676934016485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 169,
+        "coordx": 667469,
+        "coordy": 3550337.59,
+        "lat": 32.07690627,
+        "lon": 34.77435468,
+        "latitude": "32Â° 04' 36.86''",
+        "longitude": "34Â° 46' 27.67''",
+        "shematar": "×“×™×–× ×’×•×£ ×‘×¨ ×›×•×›×‘×",
+        "siteid": 5322,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.774425923920404,
+          32.076974543908946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "oidantena": 180,
+        "coordx": 668514.07,
+        "coordy": 3550371.73,
+        "lat": 32.07705861,
+        "lon": 34.78542872,
+        "latitude": "32Â° 04' 37.41''",
+        "longitude": "34Â° 47' 07.54''",
+        "shematar": "×”×§×ž×¨×™",
+        "siteid": 643,
+        "tpail": "×¤×¢×™×œ",
+        "dateimport": "05/08/2014 02:53:42"
+      },
+       "location": { 
+    "lat": 41.12,
+    "lon": -71.34
+      }
+    }
+  ]
+}

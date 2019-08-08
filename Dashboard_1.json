@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "AWIWOB1o6P84YSWI-O-j",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Dashboard  1",
+      "hits": 0,
+      "description": "Dashboard on data on hotel and wifi at tel aviv and suburb",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AWIP0XlzDqlWsQ6inqc4\",\"panelIndex\":1,\"row\":7,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"location\",\"_index\",\"shem_atar\",\"oid_antena\",\"t_pail\",\"site_id\",\"_id\",\"_type\"],\"id\":\"AWIRAeW46P84YSWI-O97\",\"panelIndex\":3,\"row\":1,\"size_x\":6,\"size_y\":3,\"sort\":[\"_score\",\"desc\"],\"type\":\"search\"},{\"col\":7,\"id\":\"AWIRIpCg6P84YSWI-O-K\",\"panelIndex\":4,\"row\":7,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWIVpZZ36P84YSWI-O-R\",\"panelIndex\":5,\"row\":4,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"columns\":[\"Name\",\"location\",\"Address\",\"Region\",\"phone\",\"email\",\"_type\",\"_index\",\"Kosher\",\"Classification \",\"tags\",\"website\",\"SwimmingPool\"],\"id\":\"AWIV3FlP6P84YSWI-O-a\",\"panelIndex\":6,\"row\":4,\"size_x\":6,\"size_y\":3,\"sort\":[\"Name\",\"asc\"],\"type\":\"search\"},{\"col\":7,\"id\":\"AWIV1PVZ6P84YSWI-O-Z\",\"panelIndex\":7,\"row\":10,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWIWGe6b6P84YSWI-O-c\",\"panelIndex\":8,\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-2\":{\"spy\":{\"mode\":{\"fill\":true,\"name\":\"table\"}},\"vis\":{\"legendOpen\":true}},\"P-4\":{\"vis\":{\"colors\":{\"Carlton\":\"#D683CE\"}}},\"P-8\":{\"mapZoom\":10,\"mapCenter\":[32.127942397192314,34.8486328125]}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-15m",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"AWILrYuR7vyPssltZnGH\",\"key\":\"Name\",\"negate\":true,\"type\":\"phrase\",\"value\":\"Carlton\"},\"query\":{\"match\":{\"Name\":{\"query\":\"Carlton\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"AWILrYuR7vyPssltZnGH\",\"key\":\"Name\",\"negate\":true,\"type\":\"phrase\",\"value\":\"Crown PLaza\"},\"query\":{\"match\":{\"Name\":{\"query\":\"Crown PLaza\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"AWILrYuR7vyPssltZnGH\",\"key\":\"tags\",\"negate\":true,\"type\":\"phrase\",\"value\":\"telaviv\"},\"query\":{\"match\":{\"tags\":{\"query\":\"telaviv\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"AWILrYuR7vyPssltZnGH\",\"key\":\"tags\",\"negate\":true,\"type\":\"phrase\",\"value\":\"3 stars\"},\"query\":{\"match\":{\"tags\":{\"query\":\"3 stars\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"AWILrYuR7vyPssltZnGH\",\"key\":\"tags\",\"negate\":true,\"type\":\"phrase\",\"value\":\" NO_Kosher\"},\"query\":{\"match\":{\"tags\":{\"query\":\" NO_Kosher\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"AWIPq1ddDqlWsQ6inqct\",\"key\":\"Classification .keyword\",\"negate\":false,\"type\":\"phrase\",\"value\":\"3\"},\"query\":{\"match\":{\"Classification .keyword\":{\"query\":\"3\",\"type\":\"phrase\"}}}},{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]

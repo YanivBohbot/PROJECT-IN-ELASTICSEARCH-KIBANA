@@ -1,0 +1,34 @@
+[
+  {
+    "_id": "AWIV3FlP6P84YSWI-O-a",
+    "_type": "search",
+    "_source": {
+      "title": "Discovery_Hotel_Tel_Aviv_1",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "Name",
+        "location",
+        "Address",
+        "Region",
+        "phone",
+        "email",
+        "_type",
+        "_index",
+        "Kosher",
+        "Classification ",
+        "tags",
+        "website",
+        "SwimmingPool"
+      ],
+      "sort": [
+        "Name",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWILrYuR7vyPssltZnGH\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }
+]

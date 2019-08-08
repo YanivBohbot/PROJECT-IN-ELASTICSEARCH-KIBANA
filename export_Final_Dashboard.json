@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "AWNU0tVVSUPBnjiEB1ww",
+    "_type": "dashboard",
+    "_source": {
+      "title": "New Dashboard 8.2",
+      "hits": 0,
+      "description": "graph tikune wifi +hotel+pharm+beach",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AWNKhyDdSUPBnjiEB1v_\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWLu2vgotgkfaFTWyf1_\",\"panelIndex\":3,\"row\":7,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWIWOs6E6P84YSWI-O-k\",\"panelIndex\":4,\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWIVpZZ36P84YSWI-O-R\",\"panelIndex\":5,\"row\":13,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWIRIpCg6P84YSWI-O-K\",\"panelIndex\":6,\"row\":10,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWIV1PVZ6P84YSWI-O-Z\",\"panelIndex\":7,\"row\":16,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWKRvAUHepyLKnzdeNzf\",\"panelIndex\":8,\"row\":16,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWKRut1qepyLKnzdeNze\",\"panelIndex\":9,\"row\":19,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWKRv9g9epyLKnzdeNzg\",\"panelIndex\":10,\"row\":13,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWJoB_FR4K3Q2_e8_SaC\",\"panelIndex\":11,\"row\":25,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWIP0XlzDqlWsQ6inqc4\",\"panelIndex\":12,\"row\":19,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWKV9EflepyLKnzdeNzw\",\"panelIndex\":13,\"row\":28,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"columns\":[\"_index\",\"location\",\"_id\",\"shem_rechov\",\"_score\",\"_type\",\"id_merkahat\",\"msbait\",\"phone\"],\"id\":\"AWKV-dT1epyLKnzdeNzy\",\"panelIndex\":16,\"row\":22,\"size_x\":6,\"size_y\":3,\"sort\":[\"_score\",\"desc\"],\"type\":\"search\"},{\"col\":1,\"columns\":[\"oidhof\",\"shem\",\"tayelet\",\"sportyami\",\"negishut\",\"mtknyeladi\",\"mtknsport\",\"miklahot\",\"hanaya\",\"cisaot\",\"caduraf\",\"betcafe\",\"location\"],\"id\":\"AWKV-_7XepyLKnzdeNzz\",\"panelIndex\":17,\"row\":31,\"size_x\":12,\"size_y\":3,\"sort\":[\"_score\",\"desc\"],\"type\":\"search\"},{\"col\":7,\"id\":\"AWLu3AhatgkfaFTWyf2A\",\"panelIndex\":18,\"row\":25,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"Region\",\"_id\",\"_index\",\"_score\",\"pin.location\",\"_type\",\"date_tikune\",\"mispar_takala\",\"oid_antena\",\"price\",\"shem_atar\",\"site_id\",\"t_pail\"],\"id\":\"AWIRAeW46P84YSWI-O97\",\"panelIndex\":19,\"row\":10,\"size_x\":6,\"size_y\":3,\"sort\":[\"_score\",\"desc\"],\"type\":\"search\"},{\"col\":7,\"columns\":[\"Name\",\"Address\",\"Region\",\"phone\",\"email\",\"_type\",\"_index\",\"Kosher\",\"Classification \",\"tags\",\"website\",\"SwimmingPool\",\"pin.location\"],\"id\":\"AWIV3FlP6P84YSWI-O-a\",\"panelIndex\":20,\"row\":28,\"size_x\":6,\"size_y\":3,\"sort\":[\"Name\",\"asc\"],\"type\":\"search\"},{\"col\":1,\"id\":\"AWKWJigYepyLKnzdeN0M\",\"panelIndex\":21,\"row\":22,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"size_x\":6,\"size_y\":3,\"panelIndex\":22,\"type\":\"visualization\",\"id\":\"AWNfFoWRSUPBnjiEB1xD\",\"col\":1,\"row\":4},{\"size_x\":6,\"size_y\":3,\"panelIndex\":23,\"type\":\"visualization\",\"id\":\"AWNfQBOmSUPBnjiEB1xU\",\"col\":7,\"row\":4}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-10\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-11\":{\"mapCenter\":[32.06628317261135,34.742889404296875]},\"P-21\":{\"mapCenter\":[32.091882620021806,34.800567626953125]},\"P-8\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-9\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-23\":{\"mapCenter\":[32.10700619594571,34.841766357421875]}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-15m",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  },
+  {
+    "_id": "AWNUw49aSUPBnjiEB1wt",
+    "_type": "dashboard",
+    "_source": {
+      "title": "New Dashboard 8.1",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"col\":1,\"id\":\"AWNKhyDdSUPBnjiEB1v_\",\"panelIndex\":1,\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWLu2vgotgkfaFTWyf1_\",\"panelIndex\":3,\"row\":4,\"size_x\":12,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWIWOs6E6P84YSWI-O-k\",\"panelIndex\":4,\"row\":1,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWIVpZZ36P84YSWI-O-R\",\"panelIndex\":5,\"row\":7,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWIRIpCg6P84YSWI-O-K\",\"panelIndex\":6,\"row\":7,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWIV1PVZ6P84YSWI-O-Z\",\"panelIndex\":7,\"row\":10,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWKRvAUHepyLKnzdeNzf\",\"panelIndex\":8,\"row\":10,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWKRut1qepyLKnzdeNze\",\"panelIndex\":9,\"row\":13,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWKRv9g9epyLKnzdeNzg\",\"panelIndex\":10,\"row\":13,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWJoB_FR4K3Q2_e8_SaC\",\"panelIndex\":11,\"row\":19,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"id\":\"AWIP0XlzDqlWsQ6inqc4\",\"panelIndex\":12,\"row\":16,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"id\":\"AWKV9EflepyLKnzdeNzw\",\"panelIndex\":13,\"row\":22,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":7,\"columns\":[\"_id\",\"_index\",\"_score\",\"location\",\"_type\",\"id_merkahat\",\"msbait\",\"phone\",\"shem_rechov\"],\"id\":\"AWKV-dT1epyLKnzdeNzy\",\"panelIndex\":16,\"row\":19,\"size_x\":6,\"size_y\":3,\"sort\":[\"_score\",\"desc\"],\"type\":\"search\"},{\"col\":1,\"columns\":[\"oidhof\",\"shem\",\"tayelet\",\"sportyami\",\"negishut\",\"mtknyeladi\",\"mtknsport\",\"miklahot\",\"hanaya\",\"cisaot\",\"caduraf\",\"betcafe\",\"location\"],\"id\":\"AWKV-_7XepyLKnzdeNzz\",\"panelIndex\":17,\"row\":25,\"size_x\":12,\"size_y\":3,\"sort\":[\"_score\",\"desc\"],\"type\":\"search\"},{\"col\":7,\"id\":\"AWLu3AhatgkfaFTWyf2A\",\"panelIndex\":18,\"row\":22,\"size_x\":6,\"size_y\":3,\"type\":\"visualization\"},{\"col\":1,\"columns\":[\"Name\",\"Address\",\"Region\",\"phone\",\"email\",\"_type\",\"pin.location\",\"_index\",\"Kosher\",\"Classification \",\"tags\",\"website\",\"SwimmingPool\"],\"id\":\"AWIV3FlP6P84YSWI-O-a\",\"panelIndex\":20,\"row\":16,\"size_x\":6,\"size_y\":3,\"sort\":[\"Name\",\"asc\"],\"type\":\"search\"}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-10\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-11\":{\"mapCenter\":[32.11631176714,34.73052978515624]},\"P-8\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}},\"P-9\":{\"vis\":{\"defaultColors\":{\"0 - 100\":\"rgb(0,104,55)\"}}}}",
+      "version": 1,
+      "timeRestore": true,
+      "timeTo": "now",
+      "timeFrom": "now-15m",
+      "refreshInterval": {
+        "display": "Off",
+        "pause": false,
+        "value": 0
+      },
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"match_all\":{}}}],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]

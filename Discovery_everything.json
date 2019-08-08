@@ -1,0 +1,292 @@
+[
+  {
+    "_id": "AWIL7bHC7vyPssltZnGS",
+    "_type": "search",
+    "_source": {
+      "title": "saved 2",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWILqTbX7vyPssltZnGF\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"negate\":false,\"index\":\"AWILqTbX7vyPssltZnGF\",\"type\":\"phrase\",\"key\":\"Name\",\"value\":\"ARBEL SUITS\",\"disabled\":false,\"alias\":null},\"query\":{\"match\":{\"Name\":{\"query\":\"ARBEL SUITS\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "AWIL6e2l7vyPssltZnGR",
+    "_type": "search",
+    "_source": {
+      "title": "saved 3",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "email",
+        "oid_antena",
+        "shem_atar",
+        "t_pail",
+        "Kosher",
+        "Name",
+        "SwimmingPool",
+        "Region",
+        "Classification",
+        "location",
+        "title"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWIPq1ddDqlWsQ6inqct\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWIRAeW46P84YSWI-O97",
+    "_type": "search",
+    "_source": {
+      "title": "Discovery_Wifi_Point_Tel_Aviv",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "location",
+        "_index",
+        "shem_atar",
+        "oid_antena",
+        "t_pail",
+        "site_id",
+        "_id",
+        "_type"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWIPnAKbDqlWsQ6inqcp\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWIV3FlP6P84YSWI-O-a",
+    "_type": "search",
+    "_source": {
+      "title": "Discovery_Hotel_Tel_Aviv_1",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "Name",
+        "location",
+        "Address",
+        "Region",
+        "phone",
+        "email",
+        "_type",
+        "_index",
+        "Kosher",
+        "Classification ",
+        "tags",
+        "website",
+        "SwimmingPool"
+      ],
+      "sort": [
+        "Name",
+        "asc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWILrYuR7vyPssltZnGH\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWKV-_7XepyLKnzdeNzz",
+    "_type": "search",
+    "_source": {
+      "title": "New Saved BeachTelaviv",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "oidhof",
+        "shem",
+        "tayelet",
+        "sportyami",
+        "negishut",
+        "mtknyeladi",
+        "mtknsport",
+        "miklahot",
+        "hanaya",
+        "cisaot",
+        "caduraf",
+        "betcafe",
+        "location"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWJyDFb_epyLKnzdeNy7\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWKV-IMiepyLKnzdeNzx",
+    "_type": "search",
+    "_source": {
+      "title": "New Saved Theatres Telaviv",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_id",
+        "knegishut",
+        "knisa",
+        "location",
+        "msbait",
+        "oidthe",
+        "phonenumb",
+        "shem",
+        "shemangli",
+        "shemrechov",
+        "_index",
+        "_score"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWKV8hltepyLKnzdeNzv\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWKV-dT1epyLKnzdeNzy",
+    "_type": "search",
+    "_source": {
+      "title": "New Saved Pharmacie Telaviv",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "location",
+        "_id",
+        "_index",
+        "_score",
+        "_type",
+        "id_merkahat",
+        "msbait",
+        "phone",
+        "shem_rechov"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWJeFcUBaOmzlBxP5XT7\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWKV_WuCepyLKnzdeNz0",
+    "_type": "search",
+    "_source": {
+      "title": "New Saved Info Telaviv",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "oidinfo",
+        "location",
+        "housenum",
+        "additional",
+        "_score",
+        "_index",
+        "_id",
+        "phonenumbe",
+        "openinghou",
+        "placedescr",
+        "shem",
+        "streetname",
+        "_type"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWKV8Q1NepyLKnzdeNzu\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWKWGVzMepyLKnzdeN0G",
+    "_type": "search",
+    "_source": {
+      "title": "New Saved pharmacie List",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_id",
+        "_index",
+        "_score",
+        "_type",
+        "id_merkahat",
+        "location",
+        "msbait",
+        "phone",
+        "shem_rechov"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWJeFcUBaOmzlBxP5XT7\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "AWKWHnrWepyLKnzdeN0H",
+    "_type": "search",
+    "_source": {
+      "title": "New Saved WIFI LIST",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_id",
+        "_index",
+        "_score",
+        "_type",
+        "location",
+        "shem_atar",
+        "site_id",
+        "t_pail",
+        "Region",
+        "mispar_takala",
+        "oid_antena"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWIPnAKbDqlWsQ6inqcp\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }
+]

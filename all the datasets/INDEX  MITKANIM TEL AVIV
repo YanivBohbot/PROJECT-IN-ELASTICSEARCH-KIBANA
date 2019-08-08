@@ -1,0 +1,15 @@
+{"index":
+{"_index":"hotel_telaviv",
+ "_type":"",
+ "_id":"1"}
+ }
+{"name":"'תל אביב והמרכז", 
+"description":"hotel", 
+"street":"Nagan",
+"city":"TelAviv ", 
+"state":"Israel", 
+"zip":"176115",
+"location":[31.8955385,76.8380405],
+ "fees":2000,
+"tags":["Senior Secondary", "beautiful campus"],
+"rating":"3.5"}

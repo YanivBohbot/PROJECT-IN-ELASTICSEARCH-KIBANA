@@ -1,0 +1,1276 @@
+#### 10/05/2018
+
+
+
+
+
+##############################################################################################################
+
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+#---------Now we search 
+############################################################################
+################### COMBINING FILTERS ######################################
+
+GET /wifipoint/telaviv/_search
+{
+   "query" : {
+      "constant_score" : { 
+         "filter" : {
+            "bool" : {
+              "should" : [
+                 { "term" : {"t_pail" : "yes"}}, 
+                 { "term" : {"mispar_takala" : 11}} 
+              ],
+              "must_not" : {
+                 "term" : {"shem_atar": "Rothschild/Hachmonaim"} 
+              }
+           }
+         }
+      }
+   }
+}
+#############################################################
+
+
+
+DELETE wifipoint
+
+######################################################################################################  MAAPPIIING  Wifi Point With PIN LOCATION + Price ####################
+PUT wifipoint
+{
+  "mappings": {
+    "telaviv": {
+      "properties": {
+        "oid_antena": { "type": "integer" },
+        "pin": {"properties": {"location": {"type": "geo_point"}}},
+        "location": { "type": "geo_point" },
+        "shematar":  { "type": "keyword"  },
+         "Region": { "type": "keyword" },
+        "site_id": { "type": "integer" },
+        "t_pail": { "type":  "keyword"},
+        "mispar_takala":{ "type": "integer" },
+        "price":{"type":"integer"},
+         "date_tikune": {
+          "type": "date" 
+        }
+      }
+    }
+  }
+}
+
+
+################################################################################################################### BULK WIFI POINT ###############################
+########################## BULK WIFI POINT WITH POINT LOCATION + Price ###################
+POST _bulk
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":1}}
+{"oid_antena": 5, "pin" : {"location":[32.0851042,34.7679981]},"shem_atar":"marina","Region":"Tel Aviv","site_id": 8,"t_pail": "yes","price":350.7,"date_tikune":"2015-01-01T12:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":2}}
+{"oid_antena": 6,"pin" : {"location": [32.0800334,34.7665656]},"shem_atar": "frishman","Region":"Tel Aviv","site_id": 9,"t_pail": "no", "mispar_takala":11,"price":471.2,"date_tikune":"2015-02-01T13:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":3}}
+{"oid_antena": 7,"pin" : {"location": [32.07296392,34.7642778]},"shem_atar": "hof yerushalaim","Region":"Tel Aviv","site_id": 10,"t_pail": "yes","mispar_takala":78,"price":31.2,"date_tikune":"2015-01-01T12:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":4}}
+{"oid_antena": 8,"pin" : {"location": [32.07042921,34.76347161]},"shem_atar": "banana beach","Region":"Tel Aviv","site_id": 11,"t_pail": "no","price":3770,"date_tikune":"2016-01-01T16:30:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":5}}
+{"oid_antena": 22,"pin" : {"location": [32.08297506,34.77687719]},"shem_atar": "Houlda 11","Region":"Tel Aviv","site_id": 31,"t_pail": "yes","mispar_takala":32,"price":56.0,"date_tikune":"2016-01-01T17:15:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":6}}
+{"oid_antena": 23,"pin" : {"location": [32.08042351,34.78111193]},"shem_atar": "kikar rabin","Region":"Tel Aviv","site_id": 32,"t_pail": "yes","price":656.80,"date_tikune":"2018-01-01T08:45:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":7}}
+{"oid_antena": 24,"pin" : {"location": [32.08001325,34.78596978]},"shem_atar": "David Ameleich 78","Region":"Tel Aviv","site_id": 33,"t_pail": "no","mispar_takala":12,"price":1047.741,"date_tikune":"2014-01-01T11:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":8}}
+{"oid_antena": 26,"pin" : {"location": [32.07764096,34.77996543]},"shem_atar": "Sderot Hen North","Region":"Tel Aviv","site_id": 34,"t_pail": "yes","price":476.90,"date_tikune":"2015-01-01T12:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":9}}
+{"oid_antena": 27,"pin" : {"location": [32.07042921,34.76347161]},"shem_atar": "Sderot Hen North","Region":"Tel Aviv","site_id": 35,"t_pail": "no","mispar_takala":11,"price":356.80,"date_tikune":"2015-01-01T16:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":10}}
+{"oid_antena": 29,"pin" : {"location": [32.07053895,34.77888068]},"shem_atar":"Rothschild/Hachmonaim","Region":"Tel Aviv","site_id": 37,"t_pail": "no","mispar_takala":11,"price":66.80,"date_tikune":"2017-01-01T18:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":11}}
+{"oid_antena": 38,"pin" : {"location": [32.06974639,34.77039946]},"shem_atar": "Allenby/Shuk_Akarmel","Region":"Tel Aviv","site_id": 53361,"t_pail": "yes","mispar_takala":0,"price":6874.80,"date_tikune":"2017-01-01T18:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":12}}
+{"oid_antena": 44,"pin" : {"location": [32.07745499,34.78431763]},"shem_atar": "Dovnov","Region":"Tel Aviv","site_id": 64,"t_pail": "yes","price":65.80,"date_tikune":"2017-01-01T18:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":13}}
+{"oid_antena": 47,"pin" : {"location": [32.07300235,34.77373392]},"shem_atar": "Gan Meir","Region":"Tel Aviv","site_id": 533,"t_pail": "no","mispar_takala":14,"price":654.80,"date_tikune":"2015-01-01T17:04:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":14}}
+{"oid_antena": 48,"pin" : {"location": [32.06977373,34.77280434]},"shem_atar": "Shenkin","Region":"Tel Aviv","site_id": 5331,"t_pail": "no","mispar_takala":11,"price":696.80,"date_tikune":"2016-01-01T18:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":15}}
+{"oid_antena": 49,"pin" : {"location": [32.07203976,34.76932874]},"shem_atar": "Allenby/Yona","Region":"Tel Aviv","site_id": 5335,"t_pail": "no","mispar_takala":11,"price":846.74,"date_tikune":"2015-01-01T19:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":16}}
+{"oid_antena": 97,"pin" : {"location": [32.08181012,34.77390003]},"shem_atar": "Gordon","Region":"Tel Aviv","site_id": 5342,"t_pail": "yes","price":126.22,"date_tikune":"2015-01-01T19:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":17}}
+{"oid_antena": 104,"pin" : {"location": [32.0685588,34.76278902]},"shem_atar": "Hof Agolshim","Region":"Tel Aviv","site_id": 37,"t_pail": "yes","price":1486.80,"date_tikune":"2018-01-01T11:17:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":18}}
+{"oid_antena": 105,"pin" : {"location": [32.07760395,34.76613217]},"shem_atar": "Hof Bograshov","Region":"Tel Aviv","site_id": 1911,"t_pail": "no","mispar_takala":12,"price":4856.80,"date_tikune":"2015-01-01T12:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":19}}
+{"oid_antena": 106,"pin" : {"location": [32.08254054,34.76736443]},"shem_atar": "Hof Gordon","Region":"Tel Aviv","site_id": 81,"t_pail": "yes","price":46.80,"date_tikune":"2015-01-01T12:12:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":20}}
+{"oid_antena": 114,"pin" : {"location": [32.08167907,34.78023186]},"shem_atar": "Rabin/Bengurion","Region":"Tel Aviv","site_id": 323,"t_pail": "no","mispar_takala":22,"price":6.80,"date_tikune":"2015-01-01T14:17:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":21}}
+{"oid_antena": 132,"pin" : {"location": [32.06990479,34.77061129]},"shem_atar": "Allenby/Shenkin","Region":"Tel Aviv","site_id": 53364,"t_pail": "no","mispar_takala":22,"price":66.80,"date_tikune":"2016-01-01T08:10:30Z"}
+{ "index" : { "_index" : "wifipoint", "_type" : "telaviv","_id":22}}
+{"oid_antena": 142,"pin" : {"location": [32.08318878,34.7956014]},"shem_atar": "Mitham Arakevet","Region":"Tel Aviv","site_id": 63,"t_pail": "no","mispar_takala":12,"price":66.98,"date_tikune":"2016-01-01T08:10:30Z"}
+
+##############################################################
+
+
+###---- Now We can Search How many Tikunime we did in years
+######## HISTOGRAM OF TIKUNIME WIFI POINTS #####################
+
+POST /wifipoint/_search?size=0
+{
+    "aggs" : {
+        "tikunime_over_time" : {
+            "date_histogram" : {
+                "field" : "date_tikune",
+                "interval" : "90m"
+            }
+        }
+    }
+}
+
+################################################################
+
+
+
+
+###############################################################
+POST /wifipoint/_search?size=0
+{
+    "aggs": {
+        "range": {
+            "date_range": {
+                "field": "date_tikune",
+                "format": "MM-yyy",
+                "ranges": [
+                    { "to": "now-10M/M" }, 
+                    { "from": "now-10M/M" } 
+                ]
+            }
+        }
+    }
+}
+
+###############################################################
+
+#---------Filtering all document 
+### FILTERING WIFI POINT FROM POINT LOCATION SITUATED  AT KIKAR RABIN ###
+GET /_search
+{
+    "query": {
+        "bool" : {
+            "must" : {
+                "match_all" : {}
+            },
+            "filter" : {
+                "geo_distance" : {
+                    "distance" : "122km",
+                    "pin.location" : {
+                        "lat" : 34.779989,
+                        "lon" : 32.081548
+                    }
+                }
+            }
+        }
+    }
+}
+#########################################################################
+
+
+#----------- Now we collect how many Differents Wifi Points 
+#------- And Then we find who as the maximum number of takalot the price of each 
+################ AGGREGATION MAX WIFIPOINT TAKALA ##############################
+POST /wifipoint/_search?size=0
+{
+    "aggs" : {
+        "max_mispar_takala" : { "max" : { "field" : "mispar_takala" } }
+    }
+}
+
+
+##############################################################################
+
+
+#----------- Now we collect how many Differents Wifi Points 
+#----------- And Then we summarize the price of each 
+##################    AGGREGATION SUMARIZE PRICE WIFI POINT #####################
+POST /wifipoint/_search?size=0
+{
+
+    "aggs" : {
+        "sum_t" : { "sum" : { "field" : "price" } }
+    }
+}
+#################################################################################
+
+
+#----------- Now we collect how many Different type of problem 
+#----------- On our Wifi Point in Tel Aviv
+############### Cardinality Aggregation HOW MANY DIFFERENT FIELDS ###############
+POST /wifipoint/_search?size=0
+{
+    "aggs" : {
+        "type_count" : {
+            "cardinality" : {
+                "field" : "mispar_takala"
+            }
+        }
+    }
+}
+
+#----------- Now we collect how many Probelem on our we have
+#----------- On our Wifi Point in Tel Aviv
+############# AGGREGATION THAT COUNT HOW MANY WIFI POINT HAVE TAKALA #############
+POST /wifipoint/_search?size=0
+{
+
+    "aggs" : {
+      "count_mispar_takala" : { "value_count" : { "field" : "mispar_takala" } }
+    }
+}
+
+###################################################################################
+
+#----- We Now Calculate the average price of tahanat Wifi  that are in Tel Aviv
+###  Filter Aggregation  For the Average Price OF wifi point 
+POST _search?
+{
+    "aggs" : {
+        "telavivs" : {
+            "filter" : { "term": { "_type": "telaviv" } },
+            "aggs" : {
+                "avg_t" : { "avg" : { "field" : "price" }  }
+            }
+        }
+    }
+}
+################################ Find Specific Document    ######################
+
+ GET wifipoint/telaviv/15
+ 
+########################################################################
+
+
+GET wifipoint/telaviv/_search
+{
+  "query": {
+    "match_all": {}
+  },
+    "aggs" : {
+        "avg_grade" : { "avg" : { "mispar_takala" : 12 } }
+    }
+}
+########################################################################
+ 
+
+
+
+DELETE hotel 
+########################################################################################     MAPPING HOTEL TEL AVIV ########################### 
+
+PUT hotel
+{
+  "mappings": {
+    "hotel_telaviv": {
+      "properties": {
+       "Name": { "type": "keyword" },
+       "Region": { "type": "keyword" },
+       "email": { "type": "keyword" },
+       "phone": { "type": "keyword" },
+        "website": { "type": "keyword"},
+        "Address": { "type": "keyword"},
+        "Classification": { "type": "keyword" },
+        "Kosher": { "type": "keyword" },
+       "SwimmingPool": { "type": "keyword" },
+       "pin": {"properties": {"location": {"type": "geo_point"}}},
+       "tags":  { "type": "keyword" },
+      "price":{"type":"integer"}
+      }
+    }
+  }
+}
+################################################################################################### BULK HOTEL TEL AVIV ########################
+
+
+POST _bulk
+{"index":{"_index":"hotel","_type":"hotel_telaviv","_id":"1"}}
+{"Name":"Sheraton","Region":"Tel Aviv","email":"fo.telavivtowers@sheraton.com","phone":"03-5211111","website":"http://www.sheratontelaviv.com","Address":"AYARKON 115","Classification":"5","Kosher":"yes","SwimmingPool":"yes","pin" : {"location":[32.0817321,34.7683823]},"tags":["telaviv","5 stars","kosher"],"price":735}
+{"index":{"_index":"hotel","_type":"hotel_telaviv","_id":"2"}}
+{"Name":"Carlton","Region":"Tel Aviv","email":"jimmyz@carlton.co.il","phone":"03-5201818","website":"http://www.carlton.co.il/","Address":"Eliyezer Peri 10","Classification ":"5","Kosher":"yes","SwimmingPool":"yes","pin" : {"location":[32.0874049,34.7707481]},"tags":["telaviv","5 stars","kosher"],"price":526}
+{"index":{"_index":"hotel","_type":"hotel_telaviv","_id":"3"}}
+{"Name":"Isrotel Royal Beach","Region":"Tel Aviv","email":"recephh@isrotel.co.il","phone":"03-7405000","website":"http://www.isrotel.co.il","Address":"AYARKON 19","Classification ":"4","Kosher":"yes","SwimmingPool":"yes","pin" : {"location":[32.0704473, 34.7666754]},"tags":["telaviv","4 stars","kosher"],"price":685}
+{"index":{"_index":"hotel","_type":"hotel_telaviv","_id":"4"}}
+{"Name":"Herods","Region":"Herzelya","email":"recep@herods.co.il","phone":"09-7607000","website":"http://www.herods.co.il/herods_herzliya","Address":"Ahogen 115","Classification ":"5","Kosher":"yes","SwimmingPool":"yes","pin" : {"location":[ 32.1610152,34.7946182]},"tags":["Herzelya","Wifi","5 stars","kosher"],"price":885}
+{"index":{"_index":"hotel","_type":"hotel_telaviv","_id":"5"}}
+{"Name":"Dan Tel Aviv","Region":"Tel Aviv","email":"dantelaviv@danhotels.com","phone":"03-5202525","website":"http://www.danhotels.com","Address":"AYARKON 99","Classification ":"5","Kosher":"yes","SwimmingPool":"yes","pin":{"location":[32.0795765, 34.7698757 ]},"tags":["telaviv","Wifi","5 stars","kosher"],"price":795}
+{"index":{"_index":"hotel","_type":"hotel_telaviv","_id":"6"}}
+{"Name":"Crown PLaza","Region":"Tel Aviv","email":"info_tlvcc@crowneplaza-il.com","phone":"03-7774000","website":"http://www.h-i.co.il","Address":"AYARKON 115","Classification ":"5","Kosher":"yes","SwimmingPool":"yes","pin":{"location":[32.0743158, 34.7921518 ]},"tags":["telaviv","5 stars","kosher"],"price":475}
+{"index":{"_index":"hotel","_type":"hotel_telaviv","_id":"7"}}
+{"Name":"MaXIME","Region":"Tel Aviv","email":"maxim@maxim-htl-ta.co.il","phone":"03-5173721","website":"http://telavivmaxim.com/","Address":"AYARKON 86","Classification ":"3","Kosher":"no","SwimmingPool":"no","pin" : {"location":[ 32.0776105,34.7697997]},"tags":["telaviv","3 stars","kosher"],"price":225}
+{"index":{"_index":"hotel","_type":"hotel_telaviv","_id":"8"}}
+{"Name":"ARBEL SUITS","Region":"Ramat Gan","email":"sales@arbelhotel.com","phone":"03-5225450","website":"http://www.arbelhotel.com/","Address":"Houlda 11","Classification ":"3","Kosher":"no","SwimmingPool":"no","pin" : {"location":[ 32.0859482,34.7783286]},"tags":["Ramat Gan","Wifi","3 stars"," No_Kosher"],"price":525}
+{"index":{"_index":"hotel","_type":"hotel_telaviv","_id":"9"}}
+{"Name":"GILGAL","Region":"Ramat Gan","email":"reserve@hotelgilgal.com","phone":"03-5111000","website":"http://www.hotelgilgal.co.il/","Address":"Ness Ziona 7","Classification ":"3","Kosher":"no","SwimmingPool":"no","pin" : {"location":[32.0748372,34.7694916 ]},"tags":["Ramat Gan","Wifi","3 stars","No_Kosher"],"price":135}
+{"index":{"_index":"hotel","_type":"hotel_telaviv","_id":"10"}}
+{"Name":"Sea Net","Region":"Ramat Gan","email":"seanet@jthotels.com","phone":"03-5171655","website":"http://www.seanethotel.com/","Address":"Ness Ziona 6","Classification ":"3","Kosher":"no","SwimmingPool":"no","pin" : {"location":[32.0745701, 34.7693146 ]},"tags":["Ramat Gan","Wifi","3 stars","No_Kosher"],"price":125}
+
+#- Now  let’s find the most popular Services that offers the Hotels to Customers
+##########################################################################
+GET /hotel/hotel_telaviv/_search
+{
+  "aggs": {
+    "all_interests": {
+      "terms": { "field": "tags" }
+    }
+  }
+}
+#########################################################################
+
+
+#---- Now  let’s find the most popular Services that offers the Hotels to Customers BUT ONLY IN RAMAT GAN !!!!
+##############################################################################
+GET /hotel/hotel_telaviv/_search
+{
+  "query": {
+    "match": {
+     "Region":"Ramat Gan"
+    }
+  },
+  "aggs": {
+    "all_interests": {
+      "terms": {
+        "field": "tags"
+      }
+    }
+  }
+}
+########################################################################
+
+
+
+##---------- We find all the Hotel that have email that have the pattern
+################ wildcard Query ########################################
+GET /_search
+{
+    "query": {
+        "wildcard" : { "email" : "s*com" }
+    }
+}
+####################################################################
+
+
+
+##-- We find all hotels that have stars 
+################### Finding Multiple Exact Values ################
+GET /hotel/hotel_telaviv/_search
+{
+    "query" : {
+        "constant_score" : {
+            "filter" : {
+                "terms" : { 
+                    "Classification " : [3,4]
+                }
+            }
+        }
+    }
+}
+####################################################################
+
+
+
+
+#- Now  let’s find the most popular Services that offers the Hotels to Customers BUT ONLY IN RAMAT GAN !!!!
+#######################################################################
+GET /hotel/hotel_telaviv/_search
+{
+    "aggs" : {
+        "all_interests" : {
+            "terms" : { "field" : "tags" },
+            "aggs" : {
+                "avg_age" : {
+                    "avg" : { "field" : "price" }
+                }
+            }
+        }
+    }
+}
+########################################################################
+
+
+#####################   ####  ############################################################/hotel/_search
+GET /hotel/_search
+{
+  "size": 0,
+  "aggs" : {
+    "messages" : {
+      "filters" : {
+        "filters" : {
+          "ness" :   { "match" : { "Address" : "Ness"   }},
+          "hotel" : { "match" : { "email" : "hotels" }}
+        }
+      }
+    }
+  }
+}
+########################################################################
+
+
+GET /_search
+{
+    "query": {
+        "fuzzy" : {
+            "hotel" : {
+                "value": "hot",
+                "boost": 1.0,
+                "fuzziness": 2,
+                "prefix_length": 0,
+                "max_expansions": 100
+            }
+        }
+    }
+}
+
+########################################################################
+GET hotel/_search
+{
+    "query": {
+        "fuzzy" : { "website": "http://www.h" }
+    }
+}
+########################################################################
+
+
+
+
+
+#----- Find How Many Document with TAG and How Many Document have this Tag  #################################################################################
+GET /_search
+{
+  "aggs": {
+    "all_interests": {
+      "terms": { "field": "tags" }
+    }
+  }
+}
+########################################################################
+
+
+
+
+#--- WE can find Hotel with full text which is address that we know ###
+############# FUll TEXT QUERY - MATCH QUERY ######################################
+GET /_search
+{
+    "query": {
+        "match" : { 
+         
+            "shem_rechov":"Bluch 32"
+        }
+    }
+}
+########################################################################
+
+
+#---- We can find all the Hotels that Not Kosher
+####### GET HOTEL NO KOSHER  #############################
+POST _search
+{
+  "query": {
+    "term" : {"Kosher" : "no" } 
+  }
+}
+###########################################################
+
+
+##-- We find all the documents that range of price between numbers 
+############# Range Query TERM Level -Price  #####################
+GET _search
+{
+    "query": {
+        "range" : {
+            "price" : {
+                "gte" : 200,
+                "lte" : 472,
+                "boost" : 2.0
+            }
+        }
+    }
+}
+##############################################################
+
+
+
+
+##--Find different Documents in differents fields 
+### Document in the Same Address Houlda 11 ##################
+GET /_search
+{
+  "query": {
+    "multi_match" : {
+      "query":    "Houlda 11", 
+      "fields": [ "shem_atar", "Address" ] 
+    }
+  }
+}
+#######################################################################
+
+
+
+
+######## Find document IF Exist with the same field  ###################
+GET /_search
+{
+    "query": {
+        "exists" : { "field" : "shem" }
+    }
+}
+####################################################################
+
+
+
+######################################################################
+GET /_search
+{
+    "query": {
+        "wildcard" : { "shem": "Beit*" }
+        
+    }
+}
+#######################################################################
+
+
+
+
+###################### QUERY TYPE FIND ALL HOTEL  ###############
+GET /_search
+{
+    "query": {
+        "type" : {
+            "value" : "hotel_telaviv"
+        }
+    }
+}
+######################################################################
+
+
+
+##-- search all the hotels and their distance and we will order them in a descending way 
+#########    Sorting By Distance    ###########################
+#####, "location" : [32.0658416,34.770225],
+
+GET /_search
+{
+    "sort" : [ 
+        {
+            "_geo_distance" : {
+                "pin.location": {
+                  "lat":34.770225,
+                  "lon": 32.0658416
+                },
+                "order" : "desc",
+                "unit" : "km",
+                "mode" : "max",
+                "distance_type" : "arc"
+            }
+        }
+    ],
+    "query" : {
+        "term" : { "Region": "Ramat Gan" }
+    }
+}
+######## in result we have sort:0.82334m =0.823km   ###########
+
+
+
+
+
+### TRY 1 essaie ##################### 
+#### find all document  wifi point from a geopoint ############
+GET wifipoint/telaviv/_search?size=22
+{
+  "query": {
+    "filtered": {
+       "query": {
+          "match all":{}
+      },
+      
+      "filter":{
+        "geo_distance": {
+          "distance": "2km", 
+          "pin.location": { 
+            "lat":  34.7921518,
+            "lon":  32.0743158
+          }
+        }
+      }
+    }
+  }
+}
+##############################################################
+
+
+DELETE bank
+
+###################### Mappping Bankk #########################
+PUT bank
+{
+  "mappings": {
+    "Bank_telaviv": {
+      "properties": {
+       "oid_bank":{ "type": "integer" },
+       "Bank_openning":{"type": "text"},
+       "bank_code":{ "type": "integer" },
+       "Bank_City": { "type": "keyword" },
+       "branch_code":{ "type": "integer" },
+       "bank":{"type":"text"},
+       "Branch_Name": { "type": "keyword" },
+       "Address": { "type": "keyword" },
+       "zip_code": { "type": "integer" },
+       "Bank_antena":{"type":"integer"},
+        "telephone": { "type": "keyword"},
+        "date_opened": { "type": "date",
+                         "format": "yyyy-MM-dd"},
+        "date_import": { "type": "date",
+                         "format": "yyyy-MM-dd'T'HH:mm:ss" }
+      }
+    }
+  }
+}
+###############################################################
+
+
+################# BULK BANK TEL AVIV ##########################David Ameleich
+
+POST _bulk
+{"index":{"_index":"bank","_type":"Bank_telaviv","_id":"1"}}
+{"oid_bank":"1","Bank_openning":"Tuesday :12.30-14.30 ,Wednesday :18.30-19.30","bank_code":"4","Bank_City":"Tel Aviv","branch_code":"115", "bank":"Bank Leumi","Branch_Name":"kiryat hamemshala","Address":"David Ameleich 78","Bank_antena": 24,"zip_code":"6701201","telephone":"02-5009911","date_opened":"2017-11-12","date_import":"2017-09-14T03:24:04"}
+{"index":{"_index":"bank","_type":"Bank_telaviv","_id":"2"}}
+{"oid_bank": "2","Bank_openning":"Friday :9.30-14.30 ,Tuesday :17.30-20.30","bank_code":"7","Bank_City":"Ramat Gan","branch_code":"130","bank":"Bank Leumi","Branch_Name":"Rothschild","Address":"Sheherit Israel 35","zip_code":"6816521","telephone":"02-7845123","date_opened":"1949-02-01","date_import": "2017-09-14T03:24:04"}
+{"index":{"_index":"bank","_type":"Bank_telaviv","_id":"3"}}
+{ "oid_bank": "3" ,"Bank_openning":"Sunday :8.30-14.30 ,Wednesday :8.30-19.30","bank_code":"8","Bank_City":"Tel Aviv","branch_code":"131","bank":"Bank Discount","Branch_Name":"Hakirya","Address":"Haarba 19","zip_code":"6473919","telephone":"02-9876543","date_opened":"1983-10-12","date_import":"2017-09-14T03:24:04"}
+{"index":{"_index":"bank","_type":"Bank_telaviv","_id":"4"}}
+{"oid_bank":"4","Bank_openning":"Sunday :12.30-14.30 ,Tuesday :18.30-19.30", "bank_code":"9","Bank_City":"Ramat Gan","branch_code":"115","bank":"Bank Discount","Branch_Name":"Abarzel","Branch_Address":"Shaul Ameleh 125","zip_code":"6701201","telephone":"02-7418592","date_opened":"2007-11-12","date_import":"2017-09-14T03:24:04"}
+{"index":{"_index":"bank","_type":"Bank_telaviv","_id":"5"}}
+{"oid_bank":"5","Bank_openning":"Tuesday :12.30-14.30 ,Wednesday :18.30-19.30,Sunday :12.30-14.30","bank_code":"10","Bank_City":"Tel Aviv","branch_code":"115","bank":"Bank Mizrahi Tfahot","Branch_Name":"Migdalei David","Branch_Address":"Ori 12","zip_code":"6701201","telephone":"02-9863254","date_opened":"2007-11-12","date_import":"2017-09-14T03:24:04"}
+{"index":{"_index":"bank","_type":"Bank_telaviv","_id":"6"}}
+{"oid_bank":"6","Bank_openning":"Tuesday :12.30-14.30 ,Wednesday :18.30-19.30","bank_code":"11","Bank_City":"Tel Aviv","branch_code":"115","bank":"Bank Leumi","Branch_Name":"Noa Avivim","Branch_Address":"Menahem begin 125","zip_code":"6701201","telephone":"02-1487523","date_opened":"2007-11-12","date_import":"2017-09-14T03:24:04"}
+{"index":{"_index":"bank","_type":"Bank_telaviv","_id":"7"}}
+{"oid_bank":"7","Bank_openning":"Tuesday :12.30-14.30 ,Wednesday :18.30-19.30","bank_code":"12","Bank_City":"Herzelya","branch_code":"115","bank":"Bank Mizrahi Tfahot","Branch_Name":"kiryat hamemshala","Branch_Address":"Einstein 147","zip_code":"6701201","telephone":"02-4587169","date_opened":"2007-11-12","date_import":"2017-09-14T03:24:04"}
+
+#############################################################################################
+
+##------- Find all the document of the Bank 
+##################################################################
+GET bank/Bank_telaviv/_search?size=22
+
+###################################################################
+
+
+
+##------- Find all the document of the Bank 
+#############  Match Phrase From BANK INDEX  #####################
+GET bank/Bank_telaviv/_search
+{
+  "query": {
+    "match_phrase": {"Branch_Name":"kiryat hamemshala"
+    
+    }
+  }
+}
+##################################################################
+
+
+
+
+
+##--Let"s'Find the Bank that are open in specific date and hour and highlighting it  
+####
+###  Highlighting Date & hours Openning  bank########################
+GET bank/Bank_telaviv/_search
+{
+    "query" : {
+        "match_phrase" : {
+            "Bank_openning":"Wednesday :18.30-19.30"
+        }
+    },
+    "highlight": {
+        "fields" : {
+            "Bank_openning" : {}
+        }
+    }
+}
+##################################################################
+
+
+###-------------- Find all the Bank in the Region with opening hours
+## Find all document bank index with filter ##########################
+GET bank/Bank_telaviv/_search
+{
+    "query" : {
+        "bool" : {
+            "must" : {
+                "match" : {
+                   "Bank_City":"Tel Aviv"
+                }
+            },
+            "filter" : {
+               "match_phrase" : {
+            "Bank_openning":"Wednesday :18.30-19.30"
+                }
+            }
+        }
+    }
+}
+#####################################################################
+
+
+#-------- Result are ranked by score -------------------
+###### Match Phrase From BANK INDEX ########################
+GET bank/Bank_telaviv/_search
+{
+  "query": {
+    "match": {"Branch_Name":"kiryat hamemshala"    }
+  }
+}
+############################################################
+
+
+
+
+#----Find in both of indexes Wifi and Bank wich are commons
+###########- Find Commons Wifi point with Bank
+GET /b*,w*/_search
+{
+  "query": {
+    "multi_match" : {
+      "query":    24, 
+      "fields": [ "*_antena", "Bank_antena" ] 
+    }
+  }
+}
+#################################################################
+
+
+
+
+
+
+
+##################################################################
+
+DELETE  beach 
+
+
+########################################################################################### MAPPING BEACH TEL AVIV ###################
+
+PUT beach
+{
+  "mappings": {
+    "beach_telaviv": {
+      "properties": {
+       "oidhof":{ "type": "integer" },
+       "shem":{ "type": "text" },
+       "negishut": { "type": "text" },
+       "miklahot": { "type": "text" },
+       "mtknsport": { "type": "keyword" },
+       "mtknyeladi": { "type": "keyword" },
+       "sportyami": { "type": "keyword" },
+       "caduraf": { "type": "keyword" },
+        "cisaot": { "type": "keyword" },
+       "betcafe": { "type": "keyword" },
+        "teura": { "type": "keyword"},
+        "hanaya": { "type": "text"},
+        "tayelet": { "type": "keyword"},
+        "location": { "type": "geo_point" }
+      }
+    }
+  }
+}
+
+DELETE beach 
+######################################################################################################   BULK BEACH TEL AVIV    ##################################
+
+
+POST _bulk
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"1"}}
+{"oidhof":"2","shem":"Hof Tel Baruh","negishut":"YES","miklahot":"cold water","mtknsport":"yes","mtknyeladi":"yes","sportyami":"yes", "caduraf":"yes","cisaot":"yes","betcafe":"yes", "teura":"yes","hanaya":"free","tayelet":"yes" ,"location":[34.7818269,32.1215590]}
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"2"}}
+{"oidhof":"1","shem":"Tzuk Tzafon","negishut":"YES","miklahot":"hot and cold water","mtknsport":"yes","mtknyeladi":"yes","sportyami":"yes", "caduraf":"no","cisaot":"yes","betcafe":"yes", "teura":"yes","hanaya":"free","tayelet":"yes" ,"location":[34.7910145,32.1437431]}
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"3"}}
+{"oidhof":"3","shem":"Hof Ametzitzim","negishut":"YES","miklahot":"cold water","mtknsport":"yes","mtknyeladi":"yes","sportyami":"no", "caduraf":"yes","cisaot":"yes","betcafe":"yes","teura":"yes","hanaya":"pay","tayelet":"yes" ,"location":[34.77105282,32.0939745]}
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"4"}}
+{"oidhof":"4","shem":"Hof Nordau","negishut":"no","miklahot":"cold water","mtknsport":"yes","mtknyeladi":"no","sportyami":"no", "caduraf":"no","cisaot":"yes","betcafe":"yes","teura":"yes","hanaya":"pay","tayelet":"yes" ,"location":[34.7708623,32.0924984]}
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"5"}}
+{"oidhof":"5","shem":"Hof hilton","negishut":"no","miklahot":"cold water","mtknsport":"yes","mtknyeladi":"yes","sportyami":"yes", "caduraf":"yes","cisaot":"yes","betcafe":"yes","teura":"yes","hanaya":"pay","tayelet":"yes" ,"location":[34.7696838,32.0906292]}
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"6"}}
+{"oidhof":"6","shem":"Hof Gordon","negishut":"no","miklahot":"cold water","mtknsport":"yes","mtknyeladi":"yes","sportyami":"yes", "caduraf":"yes","cisaot":"yes","betcafe":"yes","teura":"yes","hanaya":"pay","tayelet":"yes" ,"location":[34.7676536,32.0826884]}
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"7"}}
+{"oidhof":"7","shem":"Hof Frishman","negishut":"yes","miklahot":"cold water","mtknsport":"yes","mtknyeladi":"yes","sportyami":"no", "caduraf":"yes","cisaot":"yes","betcafe":"yes","teura":"no","hanaya":"pay","tayelet":"yes" ,"location":[34.7667677,32.079932]}
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"8"}}
+{"oidhof":"8","shem":"Hof Bograshov","negishut":"no","miklahot":"cold water","mtknsport":"yes","mtknyeladi":"yes","sportyami":"no", "caduraf":"yes","cisaot":"yes","betcafe":"yes","teura":"no","hanaya":"pay","tayelet":"yes" ,"location":[34.7661552,32.0780985], "date_import":"2016-09-28T02:51:04"}
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"9"}}
+{"oidhof":"9","shem":"Hof Yerushalaim","negishut":"yes","miklahot":"cold water","mtknsport":"yes","mtknyeladi":"yes","sportyami":"no", "caduraf":"yes","cisaot":"yes","betcafe":"yes","teura":"no","hanaya":"pay","tayelet":"yes" ,"location":[ 34.76452117,32.0738198]}
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"10"}}
+{"oidhof":"10","shem":"Hof Aviv","negishut":"no","miklahot":"cold water","mtknsport":"yes","mtknyeladi":"yes","sportyami":"no", "caduraf":"no","cisaot":"yes","betcafe":"yes","teura":"no","hanaya":"pay","tayelet":"yes" ,"location":[ 34.7628890,32.0691607]}
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"11"}}
+{"oidhof":"11","shem":"Hof Charles Calor","negishut":"no","miklahot":"cold water","mtknsport":"yes","mtknyeladi":"yes","sportyami":"no", "caduraf":"no","cisaot":"yes","betcafe":"yes","teura":"no","hanaya":"pay","tayelet":"yes" ,"location":[ 34.7596853,32.0610734]}
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"12"}}
+{"oidhof":"12","shem":"Hof Givate Aliyah","negishut":"no","miklahot":"cold water","mtknsport":"yes","mtknyeladi":"no","sportyami":"yes", "caduraf":"yes","cisaot":"yes","betcafe":"yes","teura":"no","hanaya":"free","tayelet":"yes" ,"location":[ 34.7452921,32.0384395]}
+{"index":{"_index":"beach","_type":"beach_telaviv","_id":"13"}}
+{"oidhof":"13","shem":"Hof Tzuk Tzafon","negishut":"yes","miklahot":"cold water","mtknsport":"yes","mtknyeladi":"yes","sportyami":"no", "caduraf":"yes","cisaot":"yes","betcafe":"yes","teura":"no","hanaya":"free","tayelet":"yes" ,"location":[34.7900364,32.1400442]}
+######################################################################################################Hof Tzuk Tzafon##################################################################################################################
+
+
+ GET beach/beach_telaviv/_search?
+
+
+
+
+#----Find in both of indexes Wifi and Bank wich are commons
+###########- Find Commons Wifi point with Bank
+GET /b*,w*/_search
+{
+  "query": {
+    "multi_match" : {
+      "location":[ 34.76452117,32.0738198],
+      "fields": [ "pin", "location" ] 
+    }
+  }
+}
+
+
+#################################################################
+
+
+
+####------ Find all the Document that have in all their fields the same words
+## --  the words are ""Hof"" & "" Yerushalaym
+######################################################################
+GET /_search?q= yerushalaim
+
+#####################################################################
+
+
+
+###--- Now Find Document The geo_distance agg is useful for searches such as to "find all theatre within 1km of me." The search results should, indeed, be limited to the 1km radius specified by the user, but we can add “another result found within 2km”:
+######   
+
+GET /_search
+{
+  "query": {
+    "bool": {
+      "must": {
+        "match": { 
+          "shem":"Dizengof Center"
+        }
+      },
+      "filter": {
+        "geo_bounding_box": {
+          "location": { 
+            "top_left": {    
+              "lat": 34.77 ,
+              "lon": 32.0815775953
+            },
+            "bottom_right": {  
+              "lat": 34.647252908 ,
+              "lon":   32.08
+            }
+          }
+        }
+      }
+    }
+  },
+  "aggs": {
+    "per_ring": {
+      "geo_distance": { 
+        "field":    "location",
+        "unit":     "km",
+        "origin": {  
+          "lat":   34.769316 ,
+          "lon":   32.072064
+        },
+        "ranges": [
+          { "from": 0, "to": 3 },
+          { "from": 2, "to": 5 }
+        ]
+      }
+    }
+  },
+  "post_filter": { 
+    "geo_distance": {
+      "distance":   "1km",
+      "location": {
+        "lat":     34.769316 ,
+        "lon":     32.072064 
+      }
+    }
+  }
+}
+#########################################################################
+
+GET /_search?q= Dizengof Center
+
+#############################################################################
+
+
+
+
+
+
+
+DELETE  info
+######################################################################################## MAPPING INFORMATION TOURIST #########################
+
+PUT info
+{
+  "mappings": {
+    "tourist_info": {
+      "properties": {
+       "oidinfo":{ "type": "integer" },
+       "shem":{ "type": "text" },
+       "Address": { "type": "text" },
+       "placedescr": { "type": "text" },
+       "housenumb": { "type": "keyword" },
+       "phonenumb": { "type": "keyword" },
+       "additional": { "type": "keyword" },
+       "openinghou": { "type": "keyword" },
+        "location": { "type": "geo_point" }
+      }
+    }
+  }
+}
+
+###################################################################################################### BULK INFORMATION TOURIST ##############################
+
+POST _bulk
+{"index":{"_index":"info","_type":"tourist_info","_id":"1"}}
+{"oidinfo":"1","shem":"Dizengof Center","Address":"Dizengof","placedescr":"between gate 5 and 7","housenum":"50","phonenumbe":"null","additional":"no responding at shabbath and holidays", "openinghou":"yes","location":[32.05516929,34.75668227]}
+{"index":{"_index":"info","_type":"tourist_info","_id":"2"}}
+{"oidinfo":"2","shem":"Truck of information for the tourist","Address":"Hof Gordon","placedescr":"null","housenum":"8","phonenumbe":"04895127","additional":"yes", "openinghou":"yes","dateimport":"yes","location":[32.07205729,34.76461814]}
+{"index":{"_index":"info","_type":"tourist_info","_id":"3"}}
+{"oidinfo":"3","shem":"Yaffo The Clock Tower","Address":"Marzuk","placedescr":"null","housenum":"2","phonenumbe":"03-5166188","additional":"no responding at shabbath and holidays", "openinghou":"yes","location":[ 32.0551692,34.75668227]}
+{"index":{"_index":"info","_type":"tourist_info","_id":"4"}}
+{"oidinfo":"4","shem":"Truck of information for the tourist","Address":"Hof Gordon","placedescr":"null","housenum":"8","phonenumbe":"04895127","additional":"no responding at shabbath and holidays", "openinghou":"yes","location":[32.074764, 34.779850]}
+
+##############################################################################################################################################################
+
+DELETE  theatres
+###################### Mappping Theatres Telaviv #############################################################################################################
+
+PUT theatres
+{
+  "mappings": {
+    "theatre_telaviv": {
+      "properties": {
+       "oidthe":{ "type": "integer" },
+       "msbait":{ "type": "integer" },
+       "Address": { "type": "text" },
+       "knisa":{ "type": "integer" },
+       "shem": { "type": "text" },
+       "knegishut": { "type": "keyword" },
+       "phonenumb": { "type": "keyword" },
+       "shemangli": { "type": "keyword" },
+        "location": { "type": "geo_point" }
+      }
+    }
+}
+  
+}
+
+############################ BULK Theatres Tel Aviv #######################
+
+POST _bulk
+{"index":{"_index":"theatres","_type":"theatre_telaviv","_id":"1"}}
+{"oidthe":"1","msbait":"8","Address":"Mazal Dagim","knisa":"45","shem":"Teatrone asimta","knegishut":"null", "phonenumb":6812126,"shemangli":"Hasimta Theatre","location":[32.05336898,34.751743]}
+{"index":{"_index":"theatres","_type":"theatre_telaviv","_id":"2"}}
+{"oidthe":"2","msbait":"2","Address":"Teress","knisa":"50","shem":"Teatrone Aleumi Habima","knegishut":"1", "phonenumb":52666668,"shemangli":"Habima National Theater","location":[ 32.0727,34.7788]}
+{"index":{"_index":"theatres","_type":"theatre_telaviv","_id":"3"}}
+{"oidthe":"3","msbait":"9","Address":"Yerushalaim","knisa":"60","shem":"Teatrone Gesher","knegishut":"null", "phonenumb":5157000,"shemangli":"Noga Theater","location":[ 32.05605,34.76007]}
+{"index":{"_index":"theatres","_type":"theatre_telaviv","_id":"4"}}
+{"oidthe":"4","msbait":"30","Address":"Leonardo da Vinci","knisa":"70","shem":"Teatrone Hacameri","knegishut":"80", "phonenumb":6060960,"shemangli":"Cameri Theater","location":[ 32.0767,34.78476]}
+{"index":{"_index":"theatres","_type":"theatre_telaviv","_id":"5"}}
+{"oidthe":"5","msbait":"101","Address":"Dizengof","knisa":"90","shem":"Beit Isine","knegishut":"null", "phonenumb":6060960,"shemangli":"Beit Lessin Theater","location":[ 32.0767,34.78476]}
+{"index":{"_index":"theatres","_type":"theatre_telaviv","_id":"6"}}
+{"oidthe":"6","msbait":"6","Address":"Haalyah ashinia","knisa":"90","shem":"Teatrone Hacameri","knegishut":"1", "phonenumb":6330808,"shemangli":"null","location":[  32.07677,34.78476 ]}
+
+################################################################################
+
+#---------boolean combination of queries 
+#- Find all the document that have 
+######### theatres/theatre_telaviv/
+GET /_search
+{
+  "query":{
+    "bool":{
+      "must": [
+       {"match": {"type":"*_tel aviv" }
+        },
+        {"match":{"Adress": "Mazal Dagim"}
+        }
+      ]
+     }
+   }
+}
+
+
+
+
+######################################################################
+POST /theatres/_search?
+{
+            "aggs" : {
+                "avg_price" : { "avg" : { "field" : "knisa" } }
+}
+
+}
+############################################################################
+
+
+
+###--- Check What is he average of entry in theatres at TLv 
+
+##### AGGREGATION MIN PRICE OF KNISA IN THEATRES AT TLV ####################
+
+POST /theatres/_search?size=0
+{
+    "aggs" : {
+        "min_price" : { "min" : { "field" : "knisa" } }
+    }
+}
+
+##########################################################################3
+
+GET /_search
+{
+    "aggs" : {
+        "genres" : {
+            "terms" : { "field" : "type" }
+        }
+    }
+}
+####################################################################
+
+
+
+
+## Geo Distance Aggregations for find pharmacies in rings around Tel Aviv ##########################
+POST /pharmacies/_search?size=0
+{
+    "aggs" : {
+        "rings_around_telaviv" : {
+            "geo_distance" : {
+                "field" : "location",
+                "origin" : "32.0767,34.78476",
+                "ranges" : [
+                  {"from": 500,  "key": "first_ring" },
+                    { "from" : 1000, "to" :3000, "key": "second_ring" },
+                    { "from" : 1500, "key": "third_ring" }
+                ]
+            }
+        }
+    }
+}
+####################################################################################
+
+
+
+
+
+################# TRY 2 Essaie  ################################
+### Find all document  wifi point from a Geo Distance Point ############ wifipoint/telaviv/_search?
+
+GET /_search
+{
+  "query": {
+        "bool" : {
+            "must" : {
+                "match_all" : {}
+            },
+                    
+      "filter":{
+        "geo_distance": {
+          "distance": "2000m", 
+          "pin.location": { 
+            "lat":     34.7665656,
+            "lon":  32.0800334
+          }
+        }
+      }
+    }
+  }
+}
+
+
+######bounding box Tel Aviv 1    ##################
+##[[[34.73901,32.029289],[34.851841,32.029289],[34.851841,32.146805],[34.73901,32.146805],[34.73901,32.029289]]]
+###############################################
+
+
+####################  Bounding Box Tel Aviv 2   ##############
+## [34.7747252908,32.0815775953],[34.7682303282,32.083350052],[34.7710178699,32.0906826745],[34.7775128325,32.0889103601],[34.7747252908,32.0815775953]
+###############################################################
+
+##################### Bounding BOX Tel Aviv 3   #############################[34.7732177676,32.078963066],[34.7651553425,32.0807680348],[34.7688607684,32.0926499061],[34.7769231935,32.0908451719],[34.7732177676,32.078963066]
+################################################################
+
+################polygonn Tel Aviv ######################
+##[34.7830658809,32.0487894352],[34.7501068965,32.0581009352],[34.7858124629,32.1345939125],[34.8208313838,32.0953374573],[34.7830658809,32.0487894352]
+################################################
+
+
+#---- Find all document in the Polygon that we draw on website
+
+############# Bounding Box Tel Aviv center ####################"hotel/hotel_telaviv/_search
+
+GET /_search
+{
+    "query": {
+        "bool" : {
+            "must" : {
+                "match_all" : {}
+            },
+            "filter" : {
+                "geo_polygon" : {
+                    "location" : {
+                        "points" : [
+                       [34.7732177676,32.078963066],
+                       [34.7651553425,32.0807680348],
+                       [34.7688607684,32.0926499061],
+                       [34.7769231935,32.0908451719],
+                       [34.7732177676,32.078963066]
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
+################################################################
+
+
+
+
+
+
+##-- Bounding Box where thre is nothing 
+
+############# Bounding Box Tel Aviv  2 center ####################"
+GET hotel/hotel_telaviv/_search
+{
+    "query": {
+        "bool" : {
+            "must" : {
+                "match_all" : {}
+            },
+            "filter" : {
+                "geo_polygon" : {
+                    "pin.location" : {
+                        "points" : [
+                        [34.7747252908,32.0815775953],
+                        [34.7682303282,32.083350052],
+                        [34.7710178699,32.0906826745],
+                        [34.7775128325,32.0889103601],
+                        [34.7747252908,32.0815775953]
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
+################################################################
+
+
+
+
+
+#--- Bounding Box Where is all the theatres and info tourist
+##
+############# Bounding Box Tel Aviv 1 ##########################
+GET /_search
+{
+    "query": {
+        "bool" : {
+            "must" : {
+                "match_all" : {}
+            },
+            "filter" : {
+                "geo_polygon" : {
+                    "location" : {
+                        "points" : [
+                     [32.029289,34.73901],
+                     [32.029289,34.851841],
+                     [32.146805,34.851841],
+                     [32.146805,34.73901],
+                     [32.029289,34.73901]
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
+######################################################################
+
+
+
+##############################  Polygon Tel Aviv 1 ##################################
+GET /_search
+{
+    "query": {
+        "bool" : {
+            "must" : {
+                "match_all" : {}
+            },
+            "filter" : {
+                "geo_polygon" : {
+                    "pin.location" : {
+                        "points" : [
+                           [34.7830658809,32.0487894352],
+                           [34.7501068965,32.0581009352],
+                           [34.7858124629,32.1345939125],
+                           [34.8208313838,32.0953374573],
+                           [34.7830658809,32.0487894352]
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+###################################################################
+
+
+
+
+
+
+###################################################################
+GET wifipoint/telaviv/_search
+{
+    "query": {
+        "bool" : {
+            "must" : {
+                "match_all" : {}
+            },
+            "filter" : {
+                "geo_distance_range" : {
+                    "from" : "2km",
+                    "to" : "20km",
+                    "pin.location" : {
+                         "lat":    32.0800334,
+                         "lon": 34.7665656 
+                    }
+                }
+            }
+        }
+    }
+}
+###################################################################
+
+
+

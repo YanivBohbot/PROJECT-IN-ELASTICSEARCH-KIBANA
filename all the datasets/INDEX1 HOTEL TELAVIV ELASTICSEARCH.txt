@@ -1,0 +1,174 @@
+####### mise a jour !!! ca marche !! ################ 
+PUT hotel_telaviv
+PUT hotel_telaviv/_bulk
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "1" } }
+{ "Name" : "Sheraton","Region": "Tel Aviv","email":"fo.telavivtowers@sheraton.com","phone":"03-5211111","website":"http://www.sheratontelaviv.com","Address":"AYARKON 115","Classification":"5","Kosher":"no","SwimmingPool":"yes","location":[34.7683823,32.0817321],"tags":["telaviv","5","kosher"]}
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "2" } }
+{ "Name" : "Carlton","Region": "Tel Aviv","email":"fo.telavivtowers@sheraton.com","phone":"03-5211111","website":"http://www.sheratontelaviv.com/","Address":"AYARKON 115","Classification ":"5","Kosher":"no","SwimmingPool":"yes","location":[34.7683823,32.0817321],"tags":["telaviv","5","kosher"]}
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "3" } }
+{ "Name" : "Isrotel Royal Beach","Region": "Tel Aviv","email":"fo.telavivtowers@sheraton.com","phone":"03-5211111","website":"http://www.sheratontelaviv.com/","Address":"AYARKON 115","Classification ":"5","Kosher":"no","SwimmingPool":"yes","location":[34.7683823,32.0817321],"tags":["telaviv","5","kosher"]}
+{"index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "4" } }
+{ "Name" : "Herods","Region": "Tel Aviv","email":"fo.telavivtowers@sheraton.com","phone":"03-5211111","website":"http://www.sheratontelaviv.com/","Address":"AYARKON 115","Classification ":"5","Kosher":"no","SwimmingPool":"yes","location":[34.7683823,32.0817321],"tags":["telaviv","5","kosher"]}
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "5" } }
+{ "Name" : "Dan Tel Aviv","Region": "Tel Aviv","email":"fo.telavivtowers@sheraton.com","phone":"03-5211111","website":"http://www.sheratontelaviv.com/","Address":"AYARKON 115","Classification ":"5","Kosher":"no","SwimmingPool":"yes","location":[34.7683823,32.0817321],"tags":["telaviv","5","kosher"]}
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "6" } }
+{ "Name" : "Crown PLaza","Region": "Tel Aviv","email":"fo.telavivtowers@sheraton.com","phone":"03-5211111","website":"http://www.sheratontelaviv.com/","Address":"AYARKON 115","Classification ":"5","Kosher":"no","SwimmingPool":"yes","location":[34.7683823,32.0817321],"tags":["telaviv","5","kosher"]}
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "7" } }
+{ "Name" : "MaXIME","Region": "Tel Aviv","email":"fo.telavivtowers@sheraton.com","phone":"03-5211111","website":"http://www.sheratontelaviv.com/","Address":"AYARKON 115","Classification ":"5","Kosher":"no","SwimmingPool":"yes","location":[34.7683823,32.0817321],"tags":["telaviv","5","kosher"]}
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "8" } }
+{ "Name" : "ARBEL SUITS","Region": "Tel Aviv","email":"fo.telavivtowers@sheraton.com","phone":"03-5211111","website":"http://www.sheratontelaviv.com/","Address":"AYARKON 115","Classification ":"5","Kosher":"no","SwimmingPool":"yes","location":[34.7683823,32.0817321],"tags":["telaviv","5","kosher"]} 
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "9" } }
+{ "Name" : "GILGAL" ,"email":"fo.telavivtowers@sheraton.com","phone":"03-5211111","website":"http://www.sheratontelaviv.com/",  "Address":"AYARKON 115", "Classification ":"5", "Kosher":"no","SwimmingPool":"yes","location":[34.7683823,32.0817321],"tags":["telaviv","5","kosher"]}
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "10" } }
+{ "Name" : "Sea Net","Region": "Tel Aviv","email":"fo.telavivtowers@sheraton.com","phone":"03-5211111","website":"http://www.sheratontelaviv.com/","Address":"AYARKON 115",  "Classification ":"5","Kosher":"no","SwimmingPool":"yes","location":[34.7683823,32.0817321],"tags":["telaviv","5","kosher"]}
+
+
+
+GET hotel/hotel_telaviv/1
+
+
+
+
+
+
+
+
+PUT hotel_telaviv
+PUT hotel_telaviv/_bulk
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "1" } }
+{ "Name" : "Sheraton",
+ "Region": "Tel Aviv",
+ "email":"fo.telavivtowers@sheraton.com",
+ "phone":"03-5211111",
+  "website":"http://www.sheratontelaviv.com/",
+  "Address":"AYARKON 115",
+  "Classification ":"5",
+  "Kosher":"no",
+  "SwimmingPool":"yes",
+  "location":{"type":"point",["lat":34.7683823,"long":32.0817321]},
+  "tags":["telaviv","5","kosher"]
+}
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "2" } }
+{ "Name" : "Carlton",
+ "Region": "Tel Aviv",
+ "email":"fo.telavivtowers@sheraton.com",
+ "phone":"03-5211111",
+  "website":"http://www.sheratontelaviv.com/",
+  "Address":"AYARKON 115",
+  "Classification ":"5",
+  "Kosher":"no",
+  "SwimmingPool":"yes",
+  "location":{"type":"point",["lat":34.7683823,"long":32.0817321]},
+  "tags":["telaviv","5","kosher"]
+  
+}
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "3" } }
+{ "Name" : "Isrotel Royal Beach",
+ "Region": "Tel Aviv",
+ "email":"fo.telavivtowers@sheraton.com",
+ "phone":"03-5211111",
+  "website":"http://www.sheratontelaviv.com/",
+  "Address":"AYARKON 115",
+  "Classification ":"5",
+  "Kosher":"no",
+  "SwimmingPool":"yes",
+  "location":{"type":"point",["lat":34.7683823,"long":32.0817321]},
+  "tags":["telaviv","5","kosher"]
+  
+}
+{"index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "4" } }
+{ "Name" : "Herods",
+ "Region": "Tel Aviv",
+ "email":"fo.telavivtowers@sheraton.com",
+ "phone":"03-5211111",
+  "website":"http://www.sheratontelaviv.com/",
+  "Address":"AYARKON 115",
+  "Classification ":"5",
+  "Kosher":"no",
+  "SwimmingPool":"yes",
+  "location":{"type":"point",["lat":34.7683823,"long":32.0817321]},
+  "tags":["telaviv","5","kosher"]}
+  
+  
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "5" } }
+{ "Name" : "Dan Tel Aviv",
+ "Region": "Tel Aviv",
+ "email":"fo.telavivtowers@sheraton.com",
+ "phone":"03-5211111",
+  "website":"http://www.sheratontelaviv.com/",
+  "Address":"AYARKON 115",
+  "Classification ":"5",
+  "Kosher":"no",
+  "SwimmingPool":"yes",
+  "location":{"type":"point",["lat":34.7683823,"long":32.0817321]},
+  "tags":["telaviv","5","kosher"]
+  }
+} 
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "6" } }
+{ "Name" : "Crown PLaza",
+ "Region": "Tel Aviv",
+ "email":"fo.telavivtowers@sheraton.com",
+ "phone":"03-5211111",
+  "website":"http://www.sheratontelaviv.com/",
+  "Address":"AYARKON 115",
+  "Classification ":"5",
+  "Kosher":"no",
+  "SwimmingPool":"yes",
+  "location":{"type":"point",["lat":34.7683823,"long":32.0817321]},
+  "tags":["telaviv","5","kosher"]}
+  
+} 
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "7" } }
+{ "Name" : "MaXIME",
+ "Region": "Tel Aviv",
+ "email":"fo.telavivtowers@sheraton.com",
+ "phone":"03-5211111",
+  "website":"http://www.sheratontelaviv.com/",
+  "Address":"AYARKON 115",
+  "Classification ":"5",
+  "Kosher":"no",
+  "SwimmingPool":"yes",
+  "location":{"type":"point",["lat":34.7683823,"long":32.0817321]},
+  "tags":["telaviv","5","kosher"]
+  
+} 
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "8" } }
+{ "Name" : "ARBEL SUITS",
+ "Region": "Tel Aviv",
+ "email":"fo.telavivtowers@sheraton.com",
+ "phone":"03-5211111",
+  "website":"http://www.sheratontelaviv.com/",
+  "Address":"AYARKON 115",
+  "Classification ":"5",
+  "Kosher":"no",
+  "SwimmingPool":"yes",
+  "location":{"type":"point",["lat":34.7683823,"long":32.0817321]},
+  "tags":["telaviv","5","kosher"]
+} 
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "9" } }
+{ "Name" : "GILGAL" ,
+ "email":"fo.telavivtowers@sheraton.com",
+ "phone":"03-5211111",
+  "website":"http://www.sheratontelaviv.com/",
+  "Address":"AYARKON 115",
+  "Classification ":"5",
+  "Kosher":"no",
+  "SwimmingPool":"yes",
+  "location":{"type":"point",["lat":34.7683823,"long":32.0817321]},
+  "tags":["telaviv","5","kosher"]
+  
+}
+{ "index" : { "_index" : "hotel", "_type" : "hotel_telaviv", "_id" : "10" } }
+{ "Name" : "Sea Net",
+ "Region": "Tel Aviv",
+ "email":"fo.telavivtowers@sheraton.com",
+ "phone":"03-5211111",
+  "website":"http://www.sheratontelaviv.com/",
+  "Address":"AYARKON 115",
+  "Classification ":"5",
+  "Kosher":"no",
+  "SwimmingPool":"yes",
+  "location":{"type":"point",["lat":34.7683823,"long":32.0817321]},
+  "tags":["telaviv","5","kosher"]
+  
+}

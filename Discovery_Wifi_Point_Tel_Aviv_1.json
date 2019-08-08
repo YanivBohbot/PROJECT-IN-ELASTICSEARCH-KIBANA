@@ -1,0 +1,29 @@
+[
+  {
+    "_id": "AWIRAeW46P84YSWI-O97",
+    "_type": "search",
+    "_source": {
+      "title": "Discovery_Wifi_Point_Tel_Aviv",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "location",
+        "_index",
+        "shem_atar",
+        "oid_antena",
+        "t_pail",
+        "site_id",
+        "_id",
+        "_type"
+      ],
+      "sort": [
+        "_score",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWIPnAKbDqlWsQ6inqcp\",\"highlightAll\":true,\"version\":true,\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }
+]

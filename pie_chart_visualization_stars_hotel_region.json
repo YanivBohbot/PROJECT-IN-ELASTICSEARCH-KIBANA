@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "AWIRIpCg6P84YSWI-O-K",
+    "_type": "visualization",
+    "_source": {
+      "title": "pie_chart_visualization_stars_hotel_region",
+      "visState": "{\"title\":\"pie_chart_visualization_stars_hotel_region\",\"type\":\"pie\",\"params\":{\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":false,\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Classification .keyword\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Region\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Name\",\"size\":100,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWIPq1ddDqlWsQ6inqct\",\"query\":{\"match_all\":{}},\"filter\":[{\"meta\":{\"index\":\"AWIPq1ddDqlWsQ6inqct\",\"type\":\"phrase\",\"key\":\"Classification .keyword\",\"value\":\"5\",\"disabled\":true,\"negate\":false,\"alias\":null},\"query\":{\"match\":{\"Classification .keyword\":{\"query\":\"5\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"AWIPq1ddDqlWsQ6inqct\",\"type\":\"phrase\",\"key\":\"Region\",\"value\":\"Tel Aviv\",\"disabled\":true,\"negate\":false,\"alias\":null,\"apply\":true},\"query\":{\"match\":{\"Region\":{\"query\":\"Tel Aviv\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"AWIPq1ddDqlWsQ6inqct\",\"type\":\"phrase\",\"key\":\"Name\",\"value\":\"Crown PLaza\",\"disabled\":true,\"negate\":false,\"alias\":null,\"apply\":true},\"query\":{\"match\":{\"Name\":{\"query\":\"Crown PLaza\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  }
+]

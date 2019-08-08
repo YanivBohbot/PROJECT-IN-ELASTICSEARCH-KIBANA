@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "AWIP0XlzDqlWsQ6inqc4",
+    "_type": "visualization",
+    "_source": {
+      "title": "pie chart hotel casher 3",
+      "visState": "{\"title\":\"pie chart hotel casher 3\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":false,\"legendPosition\":\"right\",\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Kosher\",\"size\":400,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"Name\",\"size\":395,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":true}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"AWIPq1ddDqlWsQ6inqct\",\"query\":{\"match_all\":{}},\"filter\":[]}"
+      }
+    }
+  }
+]
